@@ -356,3 +356,10 @@ p.numero-estatistica {
     color: var(--cor-branco);
 }
 
+.rodape-redes-sociais{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
