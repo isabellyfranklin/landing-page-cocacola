@@ -92,19 +92,22 @@ li a {
   align-items: center;
 
   width: 80px;
-  height: 25px;
+  height: 19px;
   background-color: var(--cor-branco);
   border-radius: 25px;
+  margin-bottom: 2px;
 }
 
 .button-login a {
   color: var(--cor--preta);
   font-weight: 600;
-  margin-top: 2px;
 }
 
-.hero h1,
-h2 {
+.button-login:hover{
+  transform: scale(1.05);
+}
+
+.hero h1,h2 {
   font-family: "Konkhmer Sleokchher", system-ui;
   color: var(--cor-branco);
   font-weight: 700;
@@ -303,9 +306,9 @@ p.numero-estatistica {
   margin-right: 35px;
 }
 
+
 .scroll-to-top button{
-  width: 50px;
-  height: 45px;
+  padding: 11px;
   background-color: var(--cor-vermelha-escuro);
   border-radius: 50%;
   border: none;
@@ -344,6 +347,7 @@ p.numero-estatistica {
 
     margin: 5px 35px 0px;
     background-color: var(--cor-vermelha-escuro);
+    transition:  background-color 1s;
     color: var(--cor-branco);
     font-size: 15px;
     font-weight: bold;
@@ -352,33 +356,58 @@ p.numero-estatistica {
 .button-cadastrar button:hover{
   cursor: pointer;
   background-color: var(--cor-branco);   
-  border: solid 2px rgb(255, 255, 255);
+  border: none;
   color: var(--cor--preta);
+  transform: scale(1.05);
 }
 
 
 .rodape-redes-sociais ul{
   display: flex;
   justify-content:center;
-  margin-top: 150px;
-  margin-left:40px ;
+  margin-top: 130px;
+  margin-right: 16px;
 }
 
 .rodape-redes-sociais img{
-  width: 45px;
+  width: 60px;
   height: 50px;
+}
+
+.rodape-redes-sociais p{
+  display: flex;
+  justify-content: center;
+  color: var(--cor-branco);
+  padding: 5px;
+  font-size: 20px;
+}
+
+.rodape-redes-sociais li:hover{
+  transform: scale(1.05);
 }
 
 .colaborador{
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin-left: 70px;
+  margin-top: 19px;
+  background-color: #000000;
 }
 
 .colaborador p{
   color: var(--cor-branco);
   padding: 10px;
+}
+
+.colaborador a{
+  color: var(--cor-branco);
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.colaborador a:hover{
+  cursor: pointer;
+  color: var(--cor-vermelha);
 }
 
 
