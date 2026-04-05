@@ -71,6 +71,9 @@ header span{
 }
 
 .navbar {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 500px;
   display: none;  /* escondido por padrão */ 
 }
 
@@ -84,14 +87,8 @@ header span{
   right: 20px;
   width: 220px;
   background-color: rgba(0, 0, 0, 0.95);
-  padding: 20px;
   border-radius: 15px;
   z-index: 1000;
-}
-
-.navbar.ativo li{
-   display: flex;
-  flex-flow: column nowrap;
 }
 
 .navbar ul {
