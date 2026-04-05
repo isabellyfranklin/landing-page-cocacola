@@ -1,3 +1,3 @@
 # landing-page-cocacola
-
-![Cópia de calculadora imc (1)](https://github.com/user-attachments/assets/e5bf2d64-9321-429d-8b7a-4417388e2319)
+## Link do Site Coca Cola:  https://isabellyfranklin.github.io/landing-page-cocacola/
+![img-website-coca-cola](https://github.com/user-attachments/assets/7fa050db-5ace-4a89-9983-337b3821ffb8)
