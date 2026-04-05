@@ -24,20 +24,20 @@ body {
 
 .fundo-vermelho {
   background-color: var(--cor-vermelha);
-  width: 698px;
-  height: 720px;
+  width: 485px;
+  height: 550px;
+  margin-top: 105px;
 
   position: absolute;
   top: 0;
   z-index: 0;
   right: 0px;
-  border-radius: 300px 0px 300px 350px;
+  border-radius: 700px 136px 300px 650px;
 }
 
 .fundo-vermelho img {
-  width: 600px;
-  height: 500px;
-
+  width: 390px;
+  height: 350px;
   position: absolute;
   top: 85px;
   right: 0;
@@ -53,21 +53,33 @@ header {
 }
 
 .logo-coca-cola {
-  width: 120px;
-  height: 40px;
-
+  width: 90px;
+  height: 30px;
   margin-top: 20px;
   margin-left: 27px;
 }
 
-.navbar {
-  margin-top: 25px;
-  margin-right: 35px;
+header span {
+  display: none; /* esconde botão hamburguer */
+}
+
+.material-symbols-outlined{
+  color: white;
+  
+}
+
+.navbar{
+   margin-top: 25px;
+   margin-right: 35px;
+}
+
+.navbar.ativo {
+  display: block;
 }
 
 .navbar ul {
   display: flex;
-  justify-content: center;
+  flex-flow: column nowrap;
   flex-flow: row nowrap;
 
   font-family: "Inter", sans-serif;
@@ -117,35 +129,35 @@ li a {
   color: var(--cor-branco);
   font-weight: 700;
   font-style: normal;
-  margin-top: 75px;
-  margin-left: 10px;
+  margin-top: 55px;
+  margin-left: 12px;
 }
 
 .hero h1 {
-  font-size: 140px;
+  font-size: 95px;
   line-height: 0.9;
 }
 
 .hero h2 {
-  font-size: 120px;
+  font-size: 85px;
   margin-top: 0;
 }
 
 .hero p {
   font-family: "Konkhmer Sleokchher", system-ui;
-  font-size: 25px;
+  font-size: 19px;
   font-weight: 500;
   color: var(--cor-branco);
   margin-left: 15px;
 }
 
 .sobre {
-  width: 97%;
-  height: 1010px;
+  width: 95%;
+  height: 1370px;
   background-color: var(--cor-vermelha);
   border-radius: 50px;
-  margin-top: 400px;
-  margin-left: 25px;
+  margin-top: 350px;
+  margin-left: 12px;
   position: relative;
 }
 
@@ -155,81 +167,67 @@ li a {
 
 .botao-sobre {
   background-color: var(--cor-branco);
-  width: 140px;
-  height: 40px;
+  width: 80px;
+  height: 20px;
   border-radius: 150px;
-  margin-top: 12px;
-  margin-left: 45px;
-
   color: var(--cor-preta);
   text-decoration: none;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 15px;
   cursor: pointer;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 15px;
+  margin-left: 20px;
 }
 
 .botao-sobre:hover{
   transform: scale(1.1);
 }
 
-
 .sobre-texto {
   display: flex;
-  justify-content: space-around;
-  margin-top: 25px;
+  justify-content: space-evenly;
+  flex-flow: column wrap;
+  margin-top: 10px;
 }
 
 .sobre p {
   color: var(--cor-branco);
   text-align: justify;
-  line-height: 2;
-
-  width: 650px;
+  line-height: 1.;
+  width: 100%;
   padding: 25px;
 }
 
 .sobre img {
-  width: 650px;
-  height: 400px;
+  width: 100%;
+  padding: 25px;
+  height: 500px;
   border-radius: 100px;
-   padding: 25px;
 }
 
 .produtos {
   background-color: var(--cor-branco);
   color: var(--cor--preta);
-  width: 97%;
-  height: 400px;
+  width: 95%;
+  height: 270px;
   border-radius: 50px;
-
-  margin-left: 25px;
+  margin-left: 12px;
   position: absolute;
-  top: 1499px;
-}
-
-.carroseul-produtos span{
-  color: var(--cor--preta);
-  margin-top: 155px;
+  top: 1805px;
 }
 
 .lista-produtos {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .card-produto {
-  text-align: center;
-  margin-top: 75px;
+  padding-bottom: 320px;
 }
 
 .card-produto img {
-  width: 70px;
-  height: 120px;
+  width: 40px;
+  height: 70px;
 }
 
 .card-produto h3 {
@@ -238,40 +236,47 @@ li a {
 }
 
 .card-produto p {
-  width: 180px;
-  text-align: center;
   padding-top: 3px;
 }
 
 .preco {
-  margin-top: 10px;
+  margin-top: 9px;
   font-weight: 700;
   font-size: 20px;
 }
 
 .linha-vertical {
   width: 1px;
-  height: 300px;
+  height: 150px;
   background-color: #999;
   margin-top: 55px;
 }
 
+.carroseul-produtos span{
+  color: var(--cor--preta);
+  margin-top: 120px;
+}
 
 .estatistica {
   width: 100%;
-  margin-top: 75px;
+  margin-top: 85px;
+  display: flex;
+  justify-content: center;
 }
 
 .lista-estatistica {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
+  flex-flow: column nowrap;
+}
+
+.item-estatistica{
+  margin: 15px;
 }
 
 .item-estatistica img {
-  width: 230px;
+  width: 250px;
   height: 200px;
-  border-radius: 25px;
+  border-radius: 50%;
 }
 
 .item-estatistica p {
@@ -283,18 +288,19 @@ li a {
 
 p.numero-estatistica {
   color: var(--cor-branco);
-  font-size: 90px;
+  font-size: 48px;
   font-weight: bolder;
   text-align: center;
   padding-right: 10px;
 }
+
 
 .rodape {
   width: 100%;
   height: 570px;
   border-radius: 50px 50px 0px 0px;
 
-  margin-top: 150px;
+  margin-top: 80px;
   background-color: var(--cor-vermelha);
 }
 

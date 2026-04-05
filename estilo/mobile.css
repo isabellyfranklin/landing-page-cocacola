@@ -1,0 +1,457 @@
+@charset "UTF-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-cinza-escuro: #323232;
+  --cor--preta: #000000;
+  --cor-vermelha: #b9202b;
+  --cor-vermelha-escuro:#650808;
+  --cor-branco: #ffffff;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap");
+
+body {
+  background-color: var(--cor-cinza-escuro);
+  font-family: "Konkhmer Sleokchher", system-ui;
+}
+
+.fundo-vermelho {
+  background-color: var(--cor-vermelha);
+  width: 370px;
+  height: 450px;
+  margin-top: 230px;
+
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  right: 0px;
+  border-radius: 700px 136px 300px 650px;
+}
+
+.fundo-vermelho img {
+  width: 380px;
+  height: 255px;
+
+  position: absolute;
+  top: 85px;
+  right: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+
+  /*position: relative;
+  z-index: 2;*/
+}
+
+.logo-coca-cola {
+  width: 90px;
+  height: 30px;
+
+  margin-top: 20px;
+  margin-left: 27px;
+}
+
+header span{
+  display: flex;
+  margin: 19px;
+}
+
+.material-symbols-outlined{
+  color: white;
+}
+
+.navbar {
+  display: none;  /* escondido por padrão */ 
+}
+
+.navbar.ativo {
+  display: block; /* aparece ao clicar */
+  
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  width: 220px;
+  background-color: rgba(0, 0, 0, 0.95);
+  padding: 20px;
+  border-radius: 15px;
+  z-index: 1000;
+}
+
+.navbar.ativo li{
+   display: flex;
+  flex-flow: column nowrap;
+}
+
+.navbar ul {
+  display: flex;
+  flex-flow: column nowrap;
+  flex-flow: row nowrap;
+  font-family: "Inter", sans-serif;
+}
+
+ul li {
+  font-size: 17px;
+  text-align: center;
+  list-style: none;
+  margin: 0px 10px 0px 30px;
+  font-weight: lighter;
+}
+
+li a {
+  text-decoration: none;
+  color: var(--cor-branco);
+}
+
+.button-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80px;
+  height: 19px;
+  background-color: var(--cor-branco);
+  border-radius: 25px;
+  margin-bottom: 2px;
+}
+
+.button-login a {
+  color: var(--cor--preta);
+  font-weight: 600;
+}
+
+.button-login:hover{
+  transform: scale(1.05);
+}
+
+.hero{
+  position: relative;
+  z-index: 0;
+}
+
+.hero h1,h2 {
+  font-family: "Konkhmer Sleokchher", system-ui;
+  color: var(--cor-branco);
+  font-weight: 700;
+  font-style: normal;
+  margin-top: 35px;
+  margin-left: 12px;
+}
+
+.hero h1 {
+  font-size: 80px;
+  line-height: 0.9;
+}
+
+.hero h2 {
+  font-size: 70px;
+  margin-top: 0;
+}
+
+.hero p {
+  font-family: "Konkhmer Sleokchher", system-ui;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--cor-branco);
+  margin-left: 15px;
+}
+
+.sobre {
+  width: 95%;
+  height: 1402px;
+  background-color: var(--cor-vermelha);
+  border-radius: 50px;
+  margin-top: 400px;
+  margin-left: 12px;
+  position: relative;
+}
+
+.sobre-conteudo {
+  padding-top: 30px;
+}
+
+.botao-sobre {
+  background-color: var(--cor-branco);
+  width: 80px;
+  height: 50px;
+  border-radius: 150px;
+  color: var(--cor-preta);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 15px;
+  margin-left: 20px;
+}
+
+.sobre-texto {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: column wrap;
+  margin-top: 10px;
+}
+
+.sobre p {
+  color: var(--cor-branco);
+  text-align: justify;
+  line-height: 1.;
+
+  width: 100%;
+  padding: 25px;
+}
+
+.sobre img {
+  width: 100%;
+  padding: 25px;
+  height: 100%;
+  border-radius: 100px;
+}
+
+.produtos {
+  background-color: var(--cor-branco);
+  color: var(--cor--preta);
+  width: 95%;
+  height: 250px;
+  border-radius: 50px;
+  margin-left: 12px;
+  position: absolute;
+  top: 1855px;
+}
+
+.lista-produtos {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 0;
+}
+
+.card-produto {
+  text-align: center;
+}
+
+.card-produto img {
+  width: 30px;
+  height: 50px;
+}
+
+.card-produto h3 {
+  color: var(--cor--preta);
+  margin: 0;
+}
+
+.card-produto p {
+  padding-top: 3px;
+}
+
+.preco {
+  margin-top: 9px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.linha-vertical {
+  width: 1px;
+  height: 150px;
+  background-color: #999;
+
+  margin-top: 55px;
+}
+
+/*
+.linha-vertical{
+  width: 0px;
+  height: 0px;
+}
+  */
+
+
+.estatistica {
+  width: 100%;
+  margin-top: 85px;
+  display: flex;
+  justify-content: center;
+}
+
+.lista-estatistica {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.item-estatistica{
+  margin: 15px;
+}
+
+.item-estatistica img {
+  width: 150px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+
+
+.item-estatistica p {
+  color: var(--cor-branco);
+  font-size: 15px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+
+p.numero-estatistica {
+  color: var(--cor-branco);
+  font-size: 38px;
+  font-weight: bolder;
+  text-align: center;
+  padding-right: 10px;
+}
+
+
+.rodape {
+  width: 100%;
+  height: 570px;
+  border-radius: 50px 50px 0px 0px;
+
+  margin-top: 80px;
+  background-color: var(--cor-vermelha);
+}
+
+.rodape-logo {
+  display: flex;
+  flex-flow: column nowrap;
+
+  padding-top: 35px;
+  padding-left: 55px;
+}
+
+.rodape-logo img {
+  width: 150px;
+}
+
+.rodape-logo p {
+  color: var(--cor-branco);
+  padding-top: 15px;
+  font-size: 20px;
+}
+
+.scroll-to-top{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 35px;
+}
+
+
+.scroll-to-top button{
+  padding: 11px;
+  background-color: var(--cor-vermelha-escuro);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.scroll-to-top span{
+  color: var(--cor-branco);
+}
+
+.rodape-formulario {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.rodape-formulario input{
+    width: 250px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+
+    margin: 35px 35px 0px 35px;
+}
+
+.button-cadastrar{
+    display: flex;
+   justify-content: flex-end;
+}
+
+.button-cadastrar button{
+    width: 250px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+
+    margin: 5px 35px 0px;
+    background-color: var(--cor-vermelha-escuro);
+    transition:  background-color 1s;
+    color: var(--cor-branco);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.button-cadastrar button:hover{
+  cursor: pointer;
+  background-color: var(--cor-branco);   
+  border: none;
+  color: var(--cor--preta);
+  transform: scale(1.05);
+}
+
+
+.rodape-redes-sociais ul{
+  display: flex;
+  justify-content:center;
+  margin-top: 130px;
+  margin-right: 16px;
+}
+
+.rodape-redes-sociais img{
+  width: 60px;
+  height: 50px;
+}
+
+.rodape-redes-sociais p{
+  display: flex;
+  justify-content: center;
+  color: var(--cor-branco);
+  padding: 5px;
+  font-size: 20px;
+}
+
+.rodape-redes-sociais li:hover{
+  transform: scale(1.05);
+}
+
+.colaborador{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 19px;
+  background-color: #000000;
+}
+
+.colaborador p{
+  color: var(--cor-branco);
+  padding: 10px;
+}
+
+.colaborador a{
+  color: var(--cor-branco);
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.colaborador a:hover{
+  cursor: pointer;
+  color: var(--cor-vermelha);
+}
+
+

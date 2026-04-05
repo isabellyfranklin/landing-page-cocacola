@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="estilo/mobile.css" media="">
-    <link rel="stylesheet" href="estilo/style.css">
+   <link rel="stylesheet" href="estilo/style.css">
+
+   <link rel="stylesheet" href="estilo/mobile.css" media="screen and (max-width: 639px)">
+
+   <link rel="stylesheet" href="estilo/huge-mobile.css" media="screen and (min-width: 640px) and (max-width: 1024px)">
+
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
     <title>Coca Cola</title>
@@ -16,7 +20,10 @@
 
     <header>
         <img class="logo-coca-cola" src="img/logo-branca-coca-cola-.png" alt="Logo da Coca Cola">
-        <nav class="navbar">
+        <span class="material-symbols-outlined" onclick="clickmenu()">
+        menu
+        </span>
+        <nav class="navbar" id="navbar">
             <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Sobre</a></li>
@@ -52,42 +59,41 @@
         </section>
 
         <section class="produtos">
-
             <div class="lista-produtos">
-
+                <div class="carroseul-produtos">
+                    <span class="material-symbols-outlined">
+                    arrow_back_ios
+                    </span>
+                </div>
                 <article class="card-produto">
-                    <img src="img/coca-cola-original-200.png" alt="Coca Cola Lata">
+                    <img src="img/coca-cola-original.png" alt="Coca Cola Lata">
                    <h3>Coca Cola</h3>
                     <p>350ml</p>
                     <p class="preco">R$ 5,59</p>
                 </article>
                 <hr class="linha-vertical">
-
                 <article class="card-produto">
-                    <img src="img/coca-cola-zero-200.png" alt=""Cola Cola Lata Zero>
+                    <img src="img/coca-cola-zero.png" alt="" style=" width: 60px;
+                     height: 52px;">
                    <h3>Coca Cola Zero</h3>
                     <p>350ml</p>
-                    <p class="preco">R$ 3,59</p>
+                    <p class="preco">R$ 6,59</p>
                 </article>
                 <hr class="linha-vertical">
-
                 <article class="card-produto">
-                    <img src="img/coquinha-200.png" alt="">
-                   <h3>Fanta Classica</h3>
-                    <p>O sabor de laranja <br>mais gostoso do mundo</p>
-                    <p class="preco">R$ 8,59</p>
-                </article>
-                <hr class="linha-vertical">
-
-                <article class="card-produto">
-                    <img src="img/" alt="">
-                   <h3>Scrite Classic </h3>
-                    <p>O sabor delicioso do mundo</p>
-                    <p class="preco">R$ 5,59</p>
-                </article>
-            
+                    <img src="img/coquinha.png" alt=""  style=" width: 30px;
+                     height: 55px;">
+                   <h3>Coquinha</h3>
+                    <p>ml</p>
+                    <p class="preco">R$ 3,50</p>
+                </article>    
+                <div class="carroseul-produtos">
+                    <span
+                    class="material-symbols-outlined">
+                        arrow_forward_ios
+                    </span>
+                </div>
             </div>
-
         </section>
 
         <section class="estatistica">
