@@ -59,13 +59,8 @@ header {
   margin-left: 27px;
 }
 
-header span {
-  display: none; /* esconde botão hamburguer */
-}
-
-.material-symbols-outlined{
-  color: white;
-  
+span.material-symbols-outlined[onclick] {
+    display: none;
 }
 
 .navbar{
