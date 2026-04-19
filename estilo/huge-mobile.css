@@ -220,10 +220,11 @@ li a {
   padding-bottom: 320px;
 }
 
-.card-produto img {
-  width: 40px;
-  height: 70px;
-}
+.card-produto img{
+  width: clamp(60px, 8vw, 90px);
+  height: clamp(60px, 8vw, 90px);
+  object-fit: contain;
+}  
 
 .card-produto h3 {
   color: var(--cor--preta);

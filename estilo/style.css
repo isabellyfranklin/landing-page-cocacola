@@ -60,8 +60,10 @@ header {
   margin-left: 27px;
 }
 
-span.material-symbols-outlined[onclick] {
+@media screen and (min-width: 640px) {
+  span.material-symbols-outlined[onclick] {
     display: none;
+}
 }
 
 .navbar {
@@ -231,10 +233,11 @@ li a {
   margin-top: 75px;
 }
 
-.card-produto img {
-  width: 70px;
-  height: 120px;
-}
+.card-produto img{
+  width: clamp(60px, 8vw, 90px);
+  height: clamp(60px, 8vw, 90px);
+  object-fit: contain;
+}  
 
 .card-produto h3 {
   color: var(--cor--preta);

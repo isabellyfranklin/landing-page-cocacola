@@ -45,12 +45,8 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row nowrap;
-
-  /*position: relative;
-  z-index: 2;*/
+  position: relative;
+  z-index: 2;
 }
 
 .logo-coca-cola {
@@ -71,39 +67,51 @@ header span{
 }
 
 .navbar {
-  display: flex;
-  flex-flow: column nowrap;
-  height: 500px;
   display: none;  /* escondido por padrão */ 
 }
 
 .navbar.ativo {
-  display: block; /* aparece ao clicar */
-  
-  display: flex;
+   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 70px;
-  right: 20px;
-  width: 220px;
-  background-color: rgba(0, 0, 0, 0.95);
+  top: 65px;
+  right: 10px;
+  width: 150px;       
+  background-color: var(--cor--preta);
   border-radius: 15px;
   z-index: 1000;
+  padding: 15px 10px;
+  margin: 0;
 }
 
-.navbar ul {
+.navbar.ativo ul {
   display: flex;
-  flex-flow: column nowrap;
-  flex-flow: row nowrap;
-  font-family: "Inter", sans-serif;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0;
+  align-items: center;              
 }
 
-ul li {
-  font-size: 17px;
-  text-align: center;
-  list-style: none;
-  margin: 0px 10px 0px 30px;
-  font-weight: lighter;
+.navbar.ativo ul li {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+navbar.ativo .button-login {
+  width: 100px;
+  height: 30px;
+  background-color: var(--cor-branco);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto 0;              
+}
+
+.navbar.ativo .button-login a {
+  color: var(--cor--preta);
+  font-weight: 600;
 }
 
 li a {
@@ -237,10 +245,11 @@ li a {
   text-align: center;
 }
 
-.card-produto img {
-  width: 30px;
-  height: 50px;
-}
+.card-produto img{
+  width: clamp(60px, 8vw, 90px);
+  height: clamp(60px, 8vw, 90px);
+  object-fit: contain;
+}  
 
 .card-produto h3 {
   color: var(--cor--preta);
@@ -261,17 +270,12 @@ li a {
   width: 1px;
   height: 150px;
   background-color: #999;
-
   margin-top: 55px;
 }
 
-/*
-.linha-vertical{
-  width: 0px;
-  height: 0px;
+.carroseul-produtos{
+  display: none;
 }
-  */
-
 
 .estatistica {
   width: 100%;
@@ -295,8 +299,6 @@ li a {
   border-radius: 50%;
 }
 
-
-
 .item-estatistica p {
   color: var(--cor-branco);
   font-size: 15px;
@@ -312,7 +314,6 @@ p.numero-estatistica {
   text-align: center;
   padding-right: 10px;
 }
-
 
 .rodape {
   width: 100%;
