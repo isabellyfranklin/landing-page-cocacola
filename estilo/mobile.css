@@ -17,6 +17,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap");
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--cor-cinza-escuro);
   font-family: "Konkhmer Sleokchher", system-ui;
@@ -67,11 +71,11 @@ header span{
 }
 
 .navbar {
-  display: none;  /* escondido por padrão */ 
+    display: none;  /* escondido por padrão */ 
 }
 
 .navbar.ativo {
-   display: flex;
+  display: flex;
   flex-direction: column;
   position: absolute;
   top: 65px;
@@ -93,9 +97,9 @@ header span{
 }
 
 .navbar.ativo ul li {
-    margin: 0;
-    text-align: center;
-    width: 100%;
+  margin: 0;
+  text-align: center;
+  width: 100%;
 }
 
 navbar.ativo .button-login {
